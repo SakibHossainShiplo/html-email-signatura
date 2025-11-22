@@ -1,0 +1,67 @@
+.email-signature-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(-45deg, #444, #0097e6);
+}
+.email-signature-container .box {
+  width: 650px;
+  border-radius: 5px;
+  background-color: #f5efef;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+
+  padding: 15px 25px;
+  overflow: hidden;
+}
+.signature-image {
+  border-right: 3px solid orangered;
+
+  padding-left: 15px;
+}
+.personal-data {
+  margin-left: 25px;
+}
+.signature-image img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  margin-right: 20px;
+  border: 5px solid orangered;
+}
+.icons a {
+  margin: 9px;
+}
+.personal-data .contact li {
+  list-style: none;
+  text-align: left;
+  margin: 10px 0;
+  color: #ccc;
+  font-weight: 600;
+}
+.contact-title {
+  text-decoration: none;
+}
+@media (max-width: 760px) {
+  .email-signature-container .box {
+    flex-flow: column;
+    margin: 20px;
+  }
+  .personal-data {
+    border-top: 2px solid orangered;
+    border-left: none;
+    margin: 10px;
+  }
+  .signature-image {
+    border-right: none;
+
+    padding-left: 15px;
+  }
+  .icons a {
+    margin: 8px;
+    align-items: center;
+    text-align: center;
+  }
+}
